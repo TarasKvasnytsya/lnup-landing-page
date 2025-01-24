@@ -104,6 +104,46 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.conveyor-belt {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  overflow: hidden;
+  background-color: #bbbbbb;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Moving content inside the belt */
+.belt-content {
+  display: flex;
+  gap: 11rem;
+  animation: scroll 50s linear infinite;;
+  white-space: nowrap;
+}
+
+/* Styling the text */
+.belt-content span {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Animation keyframes for scrolling effect */
+@keyframes scroll {
+  0% {
+      transform: translateX(0); /* Start from the initial position */
+  }
+  100% {
+      transform: translateX(-50%); /* Scroll halfway through the duplicated content */
+  }
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
