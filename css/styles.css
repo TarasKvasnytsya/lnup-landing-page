@@ -10992,12 +10992,22 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/lnup.png");
+  /*background-image: url("../assets/img/lnup.png");*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover; /* Ensure the video covers the background without distortion */
+  z-index: -1; /* Place the video behind other content */
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
