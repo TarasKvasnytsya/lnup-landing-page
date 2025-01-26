@@ -11370,3 +11370,56 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.phone-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8394a7;
+  color: white;
+  z-index: 9999;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  padding: 1rem 2rem;
+  /*display: flex;*/ /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  align-items: center; /* Vertically align content */
+  justify-content: center; /* Center-align all elements */
+  gap: 1rem; /* Add spacing between items */
+}
+
+.phone-banner .banner-text {
+  flex: 0 1 auto; /* Allow it to shrink if needed */
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.phone-banner .phone-input {
+  flex: 0 0 auto; /* Fixed width */
+  width: 300px; /* Limit the width of the input */
+  max-width: 90%; /* Ensure it stays responsive on smaller screens */
+}
+
+.phone-banner .submit-btn {
+  flex: 0 0 auto; /* Keep button size fixed */
+}
+
+.phone-banner .close-banner {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: color 0.2s ease;
+}
+
+.phone-banner .close-banner:hover {
+  color: #ffcccc;
+}

@@ -51,4 +51,16 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Show the banner after 30 seconds
+    setTimeout(() => {
+        const banner = document.getElementById("phone-banner");
+        banner.style.display = "flex";
+    }, 30000);
+
+    // Close banner on clicking the close button
+    document.querySelector(".close-banner").addEventListener("click", function() {
+        const banner = document.getElementById("phone-banner");
+        banner.style.display = "none";
+    });
+
 });
