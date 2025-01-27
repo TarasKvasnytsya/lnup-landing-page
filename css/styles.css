@@ -11042,6 +11042,22 @@ header.masthead .masthead-heading {
     padding-top: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .background-video {
+      display: none;
+  }
+  header.masthead {
+      background-image: url("../assets/img/lnup.png");
+      padding-top: 20rem; 
+  }
+  header.masthead .masthead-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+}
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
