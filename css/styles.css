@@ -11025,7 +11025,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 28rem;
+    padding-top: 20rem;
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
@@ -11040,6 +11040,24 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
     padding-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead {
+    padding-top: 25rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  header.masthead {
+    padding-top: 29rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  header.masthead {
+    padding-top: 48rem;
   }
 }
 
